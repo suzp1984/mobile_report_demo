@@ -1,0 +1,26 @@
+{
+  "name": "mobile_report_demo",
+  "homepage": "https://github.com/suzp1984/polymer_webpage",
+  "authors": [
+    "suzp1984 <suzp1984@gmail.com>"
+  ],
+  "description": "polymer_webpage",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "fullpage.js": "^2.7.9",
+    "jquery-ui": "^1.11.4"
+  }
+}
