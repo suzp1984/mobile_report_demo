@@ -1,0 +1,17 @@
+.h5_component {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.h5_component_base {
+    transition: all 1s;
+}
+
+.h5_component_base_load {
+
+}
+
+.h5_component_base_leave {
+
+}
