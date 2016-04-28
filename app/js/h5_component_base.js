@@ -4,9 +4,9 @@ var H5ComponentBase = function(name, cfg) {
     var cfg = cfg || {type : 'base'};
     var name = name || 'base';
     
-    var id = ('h5_c_' + Math.random()).replace('.', '_');
-    var cls = 'h5_c_' + cfg.type + ' h5_c_name_' + name;
-    var clsName = 'h5_c_name_' + name;
+    var id = ('h5_component_' + Math.random()).replace('.', '_');
+    var cls = 'h5_component_' + cfg.type + ' h5_component_name_' + name;
+    var clsName = 'h5_component_name_' + name;
     var component = $('<div class="h5_component ' + cls + '" id="' + id + '">');
     cfg.text && component.text(cfg.text);
     cfg.width && component.width(cfg.width/2);

@@ -26,6 +26,8 @@ var h5 = function() {
         case 'base':
             cp = new H5ComponentBase(name, cfg);
             break;
+        case 'point':
+            cp = new H5ComponentPoint(name, cfg);
         default:
         }
 
