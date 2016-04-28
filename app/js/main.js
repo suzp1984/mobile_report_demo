@@ -17,6 +17,25 @@ $(function() {
                                center: true})
           .addComponent('slogan', {text: 'logo'})
         .addPage('desc', 'page2')
+        .addComponent('point', {
+            type: 'point',
+            width: 300,
+            height: 300,
+            data: [
+                ["A", .4, 'green'],
+                ["B", .2, 'yellow', 0, '-120%'],
+                ["C", .2, 'red', 0, '120%' ]
+            ],
+            css: {
+                bottom: 0,
+                opacity: 0
+            },
+            animateIn: {bottom: 0,
+                        opacity: 0},
+            animateIn: {bottom: 80, opacity: 1},
+            animateOut: {bottom: 0, opacity: 0},
+            center: true
+        })
         .addComponent('caption', {text: 'caption',
                                   width: 514,
                                   height: 306,
