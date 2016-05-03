@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="../css/h5_component_point.css">
     <script src="../js/h5_component_point.js"></script>
 
+    <link rel="stylesheet" href="../css/h5_component_bar.css">
+    <script src="../js/h5_component_bar.js"></script>
+
     <link rel="stylesheet" href="../css/h5_component_polyline.css">
     <script src="../js/h5_component_polyline.js"></script>
 
@@ -48,9 +51,9 @@
     
     <script type="text/javascript">
       var cfg = {
-      type: 'bar',
+      type: 'polyline',
       width: 530,
-      height: 600,
+      height: 400,
       data: [
       ['JavaScript', .4, '#ff7676'],
       ['HTML/CSS', .2 ],
@@ -61,20 +64,13 @@
       ['AngularJs', .3]
       ],
       css: {
-      top: 200,
-      opacity: 0
-      },
-      animateIn: {
-      opacity: 1
-      },
-      animateOut: {
-      opacity: 0
+      top: 200
       },
       center: true
       
       };
 
-      var bar = new H5ComponentBar('myBar', cfg);
+      var bar = new H5ComponentPolyline('myBar', cfg);
       $('.iphone').append(bar);
       
     </script>
