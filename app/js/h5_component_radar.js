@@ -109,7 +109,7 @@ var H5ComponentRadar = function(name, cfg) {
 
     drawRadar(1);
     
-    component.on('onLoad', function() {
+    component.on('afterLoad', function() {
         var s = 0;
         for (var i = 0; i < 100; i++) {
             setTimeout(function() {
