@@ -72,6 +72,12 @@
 
       var radar = new H5ComponentRadar('myBar', cfg);
       $('.iphone').append(radar);
+
+      var leave = true;
+      $('body').click(function() {
+      leave = !leave;
+      $('.h5_component').trigger(leave ? 'onLeave' : 'afterLoad');
+      });
       
     </script>
   </body>

@@ -28,6 +28,16 @@ var h5 = function() {
             break;
         case 'point':
             cp = new H5ComponentPoint(name, cfg);
+            break;
+        case 'pie':
+            cp = new H5componetPie(name, cfg);
+            break;
+        case 'polyline':
+            cp = new H5ComponentPolyline(name, cfg);
+            break;
+        case 'radar':
+            cp = new H5ComponentRadar(name, cfg);
+            break;
         default:
         }
 

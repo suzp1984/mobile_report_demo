@@ -76,6 +76,12 @@
 
       var bar = new H5ComponentBar('myBar', cfg);
       $('.iphone').append(bar);
+
+      var leave = true;
+      $('body').click(function() {
+      leave = !leave;
+      $('.h5_component').trigger(leave ? 'onLeave' : 'afterLoad');
+      });
       
     </script>
   </body>

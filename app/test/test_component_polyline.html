@@ -17,12 +17,6 @@
     <link rel="stylesheet" href="../css/h5_component_base.css">
     <script src="../js/h5_component_base.js"></script>
 
-    <link rel="stylesheet" href="../css/h5_component_point.css">
-    <script src="../js/h5_component_point.js"></script>
-
-    <link rel="stylesheet" href="../css/h5_component_bar.css">
-    <script src="../js/h5_component_bar.js"></script>
-
     <link rel="stylesheet" href="../css/h5_component_polyline.css">
     <script src="../js/h5_component_polyline.js"></script>
 
@@ -72,6 +66,12 @@
 
       var bar = new H5ComponentPolyline('myBar', cfg);
       $('.iphone').append(bar);
+
+      var leave = true;
+      $('body').click(function() {
+      leave = !leave;
+      $('.h5_component').trigger(leave ? 'onLeave' : 'afterLoad');
+      });
       
     </script>
   </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"></head>
+    <!-- <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"></head> -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
@@ -14,17 +14,39 @@
     <link rel="stylesheet" href="css/h5.css">
     <script src="js/h5.js"></script>
 
-    <link rel="stylesheet" href="css/h5_component_base.css">
-    <script src="js/h5_component_base.js"></script>
 
-    <link rel="stylesheet" href="css/h5_component_point.css">
-    <script src="js/h5_component_point.js"></script>
+    <script type="text/javascript">
+      var res = ['base', 'point', 'bar', 'polyline', 'radar', 'pie'];
+      var html = [];
 
+      for (s in res) {
+      html.push('<script src="js/h5_component_' + res[s] +'.js"><\/script>');
+      html.push('<link rel="stylesheet" href="css/h5_component_' + res[s] + '.css">');
+          }
 
-    <!--
+      document.write(html.join(''));
+    </script>
+
+      
+    <!-- <link rel="stylesheet" href="css/h5_component_base.css"> -->
+    <!-- <script src="js/h5_component_base.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="css/h5_component_point.css"> -->
+    <!-- <script src="js/h5_component_point.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="css/h5_component_bar.css"> -->
+    <!-- <script src="js/h5_component_bar.js"></script> -->
+    
+    <!-- <link rel="stylesheet" href="css/h5_component_polyline.css"> -->
+    <!-- <script src="js/h5_component_polyline.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="css/h5_component_radar.css"> -->
+    <!-- <script src="js/h5_component_radar.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="css/h5_component_pie.css"> -->
+    <!-- <script src="js/h5_component_pie.js"></script> -->
+    
     <link rel="stylesheet"  href="css/main.css">
-    <script src="js/main.js"></script>
-    -->
     
   </head>
 
